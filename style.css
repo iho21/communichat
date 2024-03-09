@@ -1,3 +1,23 @@
-input {
-    vertical-align: top;
+.search-bar {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li {
+    display: inline;
+    font-size: 20pt;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 30px;
+    right: 30px;
 }
