@@ -58,5 +58,38 @@ li:last-child {
     margin: 4px 2px;
   }
   
-  .editProfile {border-radius: 8px;}
+  .editProfile {
+    border-radius: 8px;
+}
+
+  .Finance{
+    background-color: #5d96a7; 
+    border-radius: 8px;
+    height:35px;
+    width:150px;
+}
+  .Education{
+    background-color: #8d67aa; 
+    border-radius: 8px;
+    height:35px;
+    width:150px;
+}
+  .publicSafety{
+    background-color: #d4857b; 
+    border-radius: 8px;
+    height:35px;
+    width:150px;
+}
+  .Health{
+    background-color: #c782aa; 
+    border-radius: 8px;
+    height:35px;
+    width:150px;
+}
+  .Other{
+    background-color: #95cd9b; 
+    border-radius: 8px;
+    height:35px;
+    width:150px;
+}
 
