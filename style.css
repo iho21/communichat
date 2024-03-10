@@ -22,6 +22,12 @@ li {
     right: 30px;
 }
 
+.prof-text {
+    position: relative;
+    left: 250px;
+    top: 100px
+}
+
 .button {
     background-color: #818285;
     border: none;
