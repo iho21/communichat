@@ -37,3 +37,9 @@ li:last-child {
     position: absolute;
     right: 30px;
 }
+
+.prof-text {
+    position: relative;
+    left: 250px;
+    top: 100px
+}
