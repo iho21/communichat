@@ -1,6 +1,12 @@
-.search-bar {
-    position: absolute;
+* {
+    font-family: sans-serif;
     top: 30px;
+    font-size: 20pt;
+}
+
+.search-bar{
+    position: absolute;
+    
     left: 200px;
 }
 
@@ -11,14 +17,24 @@ ul {
     
 }
 
+.search-bar, ul {
+    top: 15px;
+}
+
 li {
-    display: inline;
-    font-size: 20pt;
+    display: inline-block;
+    padding: 8px;
+    
+    border-right: 3px solid gray;
+    font-family: sans-serif;
+}
+
+li:last-child {
+    border-right: none;
 }
 
 .nav-bar {
     position: absolute;
-    top: 30px;
     right: 30px;
 }
 
