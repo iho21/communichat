@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Add Issue</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset default margin and padding */
+body, h1, h2, p, ul, li, form, input, select {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set box-sizing to border-box for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style form */
+.issue-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.issue-form input[type="file"],
+.issue-form input[type="text"],
+.issue-form input[type="date"],
+.issue-form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.issue-form input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.issue-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="issueForm" class="issue-form">
+            <input type="file" name="image" id="image" accept="image/*" required>
+            <input type="text" name="issueDesc" id="issueDesc" placeholder="Issue Description" required>
+            <input type="date" name="issueDate" id="issueDate" required>
+            <select name="issueCategory" id="issueCategory" required>
+                <option value="">Select Category</option>
+                <option value="road">Road</option>
+                <option value="electricity">Electricity</option>
+                <option value="rescue">Rescue</option>
+                <option value="accident">Accident</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

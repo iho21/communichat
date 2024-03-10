@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<style>
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="file"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin: 10px 5px 10px 0;
+}
+
+.citizen
+{
+    margin-top: -25px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.upload-image
+{
+    margin-top: 10px;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"],
+    input[type="file"] {
+        margin: 5px 0;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Sign Up</h2>
+    <form id="signupForm" action="actual_page.html" method="post">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        <input type="text" name="identification_number" placeholder="Identification Number" required>
+        
+        <label for="user_type">Are you a:</label>
+        <input type="radio" id="citizen" name="user_type" value="citizen" required>
+        <label for="citizen" class="citizen">Citizen</label>
+        <input type="radio" id="official" name="user_type" value="official">
+        <label for="official" class="citizen">Official</label>
+
+        <label for="image" class="upload-image">Upload image:</label>
+        <input type="file" id="image" name="image" accept="image/*">
+        <input type="submit" value="Sign Up">
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+</div>
+
+</body>
+</html>

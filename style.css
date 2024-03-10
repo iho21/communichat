@@ -1,4 +1,4 @@
-* {
+/* * {
     font-family: sans-serif;
     top: 30px;
     font-size: 20pt;
@@ -92,5 +92,127 @@ li:last-child {
     border-radius: 8px;
     height:35px;
     width:150px;
+} */
+
+body
+{
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  grid-template-rows: 300px 1fr;
+  
+  min-width: 100vw;
+  height: 100vh;
+  gap: 1rem;
 }
 
+.profile {
+   
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url(https://quotefancy.com/media/wallpaper/3840x2160/908339-Carmen-Electra-Quote-I-know-I-m-not-perfect.jpg);
+  object-fit: contain;
+}
+
+.profile-pic
+{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.photo
+{
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  background-image: url(https://yt3.googleusercontent.com/OdEHcXDwBMOvvbwhNkoUI13X4ggPiBV5Y-0SLxacKYpQt6XQyf0pg422axjISYzhfjxURATTCg=s900-c-k-c0x00ffffff-no-rj);
+  background-position: center;
+}
+.profile-details
+{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content:  center;
+  align-items: center;
+  gap: 5px;
+}
+
+.name, .city, .tag, .problems_approved, .problems_resolved, .avg_res_time
+{
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+.problem-info {
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  gap: 2rem;
+
+}
+
+.add-button
+{
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.cards
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.card
+{
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.image
+{
+  height: 50%;
+  width: 100%;
+  background-image: url(https://media.istockphoto.com/id/538686713/photo/cracked-asphalt-after-earthquake.jpg?s=612x612&w=0&k=20&c=SbzwfmL_xf0rgZ4spkJPZ6wD6tR4AzkYEeA5iyg-_u4=);
+}
+
+.vote
+{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.form-dialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  z-index: 1000;
+}
+
+.photo-pm
+{
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtMbutp2DpQXN6FGz6VtPs4n4THIRk36u0Tm4R7FJbDiPk42IcHBZtoTFGalSNb_3KfSFAJg);
+  background-position: center;
+}
