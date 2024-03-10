@@ -21,3 +21,17 @@ li {
     top: 30px;
     right: 30px;
 }
+
+.button {
+    background-color: #818285;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+  
+  .editProfile {border-radius: 8px;}
