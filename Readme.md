@@ -1,6 +1,6 @@
 Hi Citizen,
 
-This project is the part of ALL IN ONE HACKATHON. This project is currently a sample of what we wanted to achieve and because of time constrains we could not make it fully functional.
+This project is the part of ALL IN HACKATHON. This project is currently a sample of what we wanted to achieve and because of time constrains we could not make it fully functional.
 
 How to run :- 
 
